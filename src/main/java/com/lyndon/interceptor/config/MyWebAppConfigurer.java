@@ -19,6 +19,7 @@ public class MyWebAppConfigurer extends WebMvcConfigurerAdapter {
     private MyInterceptor1 myInterceptor1;
     @Autowired
     private MyInterceptor2 myInterceptor2;
+
     @Override
     public void addInterceptors(InterceptorRegistry registry) {
         registry.addInterceptor(myInterceptor1).addPathPatterns("/**");

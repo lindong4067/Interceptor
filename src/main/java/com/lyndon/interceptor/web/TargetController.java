@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class TargetController {
 
     @GetMapping("/hello")
-    public String hello(){
+    public String hello() {
         return "Hello MyInterceptor !";
     }
 }
